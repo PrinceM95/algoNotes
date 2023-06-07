@@ -1,4 +1,4 @@
-public class codingBat {
+public class warmUp {
 
     public static void main(String[] args) {
         System.out.println("Hello World");
@@ -18,7 +18,7 @@ public class codingBat {
     //We have two monkeys, a and b, and the parameters aSmile and bSmile indicate if each is smiling. We are in trouble
     // if they are both smiling or if neither of them is smiling. Return true if we are in trouble.
 
-        public boolean monkeyTrouble (boolean aSmile, bSmile) {
+        public boolean monkeyTrouble (boolean aSmile, boolean bSmile) {
             if (aSmile && bSmile || !aSmile && bSmile) {
                 return true;
             }
@@ -27,7 +27,25 @@ public class codingBat {
 
 
     //Given two int values, return their sum. Unless the two values are the same, then return double their sum.
-    
+        public int sumDouble (int a, int b) {
+            int sum = a + b;
+
+            if (a==b) {
+               sum = sum * 2;
+            }
+            return sum;
+        }
+
+
+    // Given an int n, return the absolute difference between n and 21, except return double the absolute difference
+    // if n is over 21.
+        public int diff21(int n) {
+            if (n <= 21) {
+                return 21 - n;
+            } else {
+                return (n-21) * 2;
+            }
+        }
 }
 
 
