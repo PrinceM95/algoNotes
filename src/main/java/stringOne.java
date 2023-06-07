@@ -1,4 +1,4 @@
-public class string1 {
+public class stringOne {
 
     //Given a string name, e.g. "Bob", return a greeting of the form "Hello Bob!".
         public java.lang.String helloName(String name) {
